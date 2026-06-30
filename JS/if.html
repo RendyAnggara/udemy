@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IF Expression</title>
+  </head>
+  <script>
+    //Soal 1
+    let totalBelanja = 125000;
+    let totalAkhir = totalBelanja;
+
+    // Tulis logika IF expression di bawah ini
+    if (totalBelanja > 100000) {
+      totalAkhir = totalBelanja - totalBelanja * 0.1;
+    } else {
+      totalAkhir = totalBelanja;
+    }
+    document.writeln("Total yang harus dibayar: " + totalAkhir);
+
+    //Soal 2
+    let statusUser = "premium";
+
+    // Mengapa blok kode ini gagal mendeteksi user premium?
+    if ((statusUser == "premium")) {
+      console.log("Akses Diberikan. Selamat Menonton!");
+    } else {
+      console.log("Akses Ditolak. Silakan upgrade akun Anda.");
+    }
+
+    //Soal 3
+    let skorFlip = 85;
+
+    if (skorFlip >= 90) {
+      console.log("Perfect Flip!");
+    } else if (skorFlip >= 70) {
+      console.log("Good Job!");
+    } else {
+      console.log("Try Again!");
+    }
+
+    //Soal 4
+    let nilaiSeleksi = 80;
+    let lulusAdministrasi = true;
+
+    // Gabungkan kedua kondisi di dalam IF berikut
+    if ((nilaiSeleksi >= 80 && lulusAdministrasi)) {
+      console.log("Selamat, Anda lolos ke tahap berikutnya!");
+    } else {
+      console.log("Maaf, Anda belum memenuhi kriteria pendaftaran.");
+    }
+
+    //Soal 5
+    let tokenAkses = ""; // String kosong
+
+    if (tokenAkses) {
+      console.log("Koneksi ke database MySQL berhasil dibuka.");
+    } else {
+      console.log("Gagal masuk: Token tidak valid atau kosong.");
+    }
+  </script>
+  <body></body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        //String Template (Support Multi line atau Enter)
+        const name = "Muhammad Rendyansyah Dwi Anggara";
+        const firstname = "Rendy";
+        const middleName = "Ansyah";
+        const lastName = "Anggara";
+
+        const template = `Nama: ${firstname} ${middleName} ${lastName} `; // Pengganti jika kita ingin menulis + " " + (variable)
+
+        console.info(template);
+
+        //Expression di String Template dengan multi line
+        const nilai = 80;
+        const template2 = `Name: ${name} 
+Nilai: ${nilai > 75}`;
+
+        console.info(template2);
+    </script>
+</body>
+</html>

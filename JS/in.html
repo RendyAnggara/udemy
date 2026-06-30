@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator In</title>
+</head>
+
+<script>
+    // let KTP = {
+    //     Name : "Rendy",
+    //     Umur : 19,
+    //     Askot : "Karawang"
+    // }
+
+    // if ("Name" in KTP) {
+    //     document.writeln("Data ini ada");
+    // } else {
+    //     document.writeln("Data ini tidak ada");
+    // };
+
+    //Dengan tipe data Undifined
+    let bio = {
+        Name : "Rendy",
+        Umur : null,
+        Askot : "Surabaya"
+    };
+
+    if ("Umur" in bio == undefined ) {
+        document.writeln("lah kok bisa");
+    } else {
+        document.writeln("Nah baru ga bisa");
+    };
+</script>
+<body>
+    
+</body>
+</html>

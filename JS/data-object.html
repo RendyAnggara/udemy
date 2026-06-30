@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Object</title>
+</head>
+<body>
+    <script>
+        const biodata = {
+            "nama lengkap": "Rendyansyah",
+            Asal: "Karawang",
+            umur: 20,
+            Status: "Mahasiswa"
+        }
+
+        console.table(biodata);
+
+        //Mengakses Property Object
+        console.info(`Nama : ${biodata["nama lengkap"]}`);
+        console.info(`Asal : ${biodata.Asal}`);
+        console.info(`Umur : ${biodata.umur}`);
+        console.info(`Status : ${biodata.Status}`);
+
+        delete biodata.Status;
+        console.table(biodata);
+    </script>
+</body>
+</html>
