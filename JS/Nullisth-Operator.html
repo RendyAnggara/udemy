@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nullisth Coalesting Operator</title>
+</head>
+<body>
+  <script>
+    //Tanpa Nullisth Coalesting Operator
+    let parameter = "Rendy";
+
+    let data = parameter;
+    if (data === null || data === undefined) {
+      data = "Default Value";
+    }
+
+    document.writeln(data);
+
+
+    //Nullisth Coalesting Operator
+    let nilai = null;
+
+    let data2 = nilai ?? "Default Value"; //Jika variable nilai ada maka itu yang akan di tampilkan, jika tidak maka "Deafault Value" yang akan di tampilkan
+
+    document.writeln(`<br>${data2}`);
+  </script>
+</body>
+</html>

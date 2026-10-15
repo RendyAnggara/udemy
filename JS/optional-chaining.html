@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optional Chaining</title>
+</head>
+<body>
+  <script>
+      //Optional Chaining berugna untuk mengecek apakah properti di dalam object bernilai atau tidak
+      const mobil = {
+        unit: {
+          merk: "Toyota",
+          warna: "Merah",
+        }
+      };
+
+      let merk = mobil?.unit?.merk; //Untuk Cek properti merk
+      let warna = mobil?.unit?.warna; //Untuk cek porperti Warna
+
+      document.writeln(`${merk} <br>`)
+      document.writeln(warna)
+  </script>
+</body>
+</html>
